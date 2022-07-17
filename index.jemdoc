@@ -1,0 +1,138 @@
+# jemdoc: menu{MENU}{research.html},title{Research}, showsource, analytics{UA-64995133-1}
+= Research
+
+~~~
+{}{raw}
+<script type="text/javascript">
+   function toggleDisplay(id)
+   {
+      if (document.getElementById(id).style.display=="block")
+      {
+         document.getElementById(id).style.display="none";
+      }
+      else
+      {
+         document.getElementById(id).style.display="block";
+      }
+   }
+</script>
+~~~
+
+{{<section class="card">}}
+
+My research interests include financial engineering, Monte Carlo simulation, and nonlinear optimization. I especially enjoy doing research in the intersection of these fields such as statistical learning, portfolio optimization, efficient simulation algorithms for risk management, etc. My professional background in actuarial science guides my research towards applying advanced theoretical methodologies to solve complex practical problems.
+{{</section>}}
+
+{{<section class="card">}}
+== Green Simulation
+
+~~~
+{}{img_left}{image/GreenSim.jpg}{Green Simulation}{350}
+In many financial, actuarial, industrial applications, simulation models are often run repeatedly to perform the same task with different inputs due to changing market conditions or system states.  "Green simulation" is the practice, currently under development, of reusing simulation output generated during previous experiments to increase the computational efficiency of the current experiment.
+Our research aims to develop efficient methods of output recycling and to examine their theoretical properties and practical performances.
+~~~
+
+=== Papers
+- /*Green Simulation: reusing the output of repeated experiments*/\n
+[index.html Mingbin Feng], [http://users.iems.northwestern.edu/~staum/ Jeremy Staum]\n
+Submitted to Management Science (2016)\n
+[javascript:toggleDisplay('GreenSimMS'); Abstract]~~~~[https://drive.google.com/file/d/0B88dFQMx1Q2CaVZodjJWOG9BRjQ/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]\n
+~~~
+{}{raw}
+<div id="GreenSimMS" class="abstractcontent">
+We introduce a new paradigm in simulation experiment design and analysis, called "green simulation," for the setting in which experiments are performed repeatedly with the same simulation model. Green simulation means reusing outputs from previous experiments to answer the question currently being asked of the simulation model. As a first method for green simulation, we propose estimators that reuse outputs from previous experiments by weighting them with likelihood ratios, when parameters of distributions in the simulation model differ across experiments. We analyze convergence of these green simulation estimators as more experiments are repeated, while a stochastic process changes the parameters used in each experiment. We find that green simulation reduces variance by more than an order of magnitude in examples involving catastrophe bond pricing and credit risk evaluation. 
+</div>
+~~~
+
+- /Green Simulation Designs for Repeated Experiments/\n
+[index.html Mingbin Feng], [http://users.iems.northwestern.edu/~staum/ Jeremy Staum].\n
+Proceedings of the 2015 Winter Simulation Conference, ed. L. Yilmaz, W. K. V. Chan, I. Moon, T. M. K. Roeder, C. Macal, and M. D. Rossetti, IEEE Press, 403-413.\n
+[javascript:toggleDisplay('GreenSimWSC'); Abstract]~~~~[https://drive.google.com/file/d/0B88dFQMx1Q2CczRTcUtPUld6b1E/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]\n
+~~~
+{}{raw}
+<div id="GreenSimWSC" class="abstractcontent">
+In this article we present the concept of green simulation, which views simulation outputs as scarce resources that should be recycled and reused. Output recycling, if implemented properly, can turn the computational costs in an experiment into computation investments for future ones. Green simulation designs are particularly useful for experiments that are repeated periodically. In this article we focus on repeated experiments whose inputs are observations from some underlying stochastic processes. Importance sampling and multiple importance sampling are two particular output recycling implementations considered in this article. A periodic credit risk evaluation problem in the KMV model is considered. Results from our numerical experiments show significant accuracy improvements, measured by mean squared errors, as more and more outputs are recycled and reused.
+</div>
+~~~
+{{</section>}}
+
+#################################################
+
+{{<section class="card">}}
+== Systemic Risk Components in a Network Model of Contagion 
+
+~~~
+{}{img_left}{image/SystemicRisk.jpg}{Systemic Risk}{400}
+Financial entities around the globe are interconnected and this giant global financial network requires sophisticated systemic risk management.
+This research addresses the question of risk attribution, "Who contributed how much risk to the network's overall systemic risk?", which is a key question in systemic risk management.
+Seven risk attribution methods are developed to suit different systemic risk management objectives in different time and scale.
+~~~
+
+=== Papers
+- */Systemic Risk Components in a Network Model of Contagion/*\n
+[http://users.iems.northwestern.edu/~staum/ Jeremy Staum], [index.html Mingbin Feng], and Ming Liu\n
+Forthcoming, IIE Transactions.\n
+[javascript:toggleDisplay('SystemicRisk2015'); Abstract]~~~~[https://drive.google.com/file/d/0B88dFQMx1Q2CRE9XSld6dUY3X1E/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]\n
+~~~
+{}{raw}
+<div id="SystemicRisk2015" class="abstractcontent">
+We show how to do systemic risk attribution in a network model of contagion with interlocking balance sheets, using the Shapley and Aumann-Shapley values. Along the way, we establish new results on sensitivity analysis of the Eisenberg-Noe network model of contagion, featuring a Markov-chain interpretation. We illustrate the design process for systemic risk attribution methods by developing seven of them.
+</div>
+~~~
+{{</section>}}
+
+###################################################
+
+{{<section class="card">}}
+== Practical Algorithms for Value-at-Risk Portfolio Optimization Problems 
+
+~~~
+{}{raw}
+This article compares algorithms for solving portfolio optimization problems involving value-at-risk (VaR). These problems can be formulated as mixed integer programs (MIPs) or as chance-constrained mathematical programs (CCMPs). We propose improvements to their state-of-the-art MIP formulations. We also specialize an algorithm for solving general CCMPs, featuring practical interpretations. We present numerical experiments on practical-scale VaR problems using various algorithms and provide practical advice for solving these problems.
+~~~
+
+=== Papers
+- */Practical Algorithms for Value-at-Risk Portfolio Optimization Problems/*\n
+[index.html Mingbin Feng], [http://users.iems.northwestern.edu/~andreasw/index.html Andreas Wächter], and [http://users.iems.northwestern.edu/~staum/ Jeremy Staum]\n
+Quantitative Finance Letters 3.1 (2015): 1-9.\n
+[https://drive.google.com/file/d/0B88dFQMx1Q2CVFhvZnhUQ0R0aGM/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]~~~~[http://www.tandfonline.com/doi/full/10.1080/21649502.2014.995214 Link {{<img src="image/external_link.png" alt="link" width="10">}}]
+{{</section>}}
+
+###################################################
+
+{{<section class="card">}}
+== Coherent Distortion Risk Measures in Portfolio Selection 
+
+~~~
+{}{raw}
+The theme of this paper relates to solving portfolio selection problems using linear programming. We extend the well-known linear optimization framework for Conditional Value-at-Risk (CVaR)-based portfolio selection problems and to optimization over a more general class of risk measures, known as the class of Coherent Distortion Risk Measure (CDRM). CDRM encompasses many well-known risk measures including CVaR, Wang Transform, proportional hazard measure, lookback measure, etc. A case study is conducted to illustrate the flexibility of the proposed optimization scheme. In the case study we compare and contrast the efficiency of the 1/n-portfolio strategy and the optimal portfolios with respect to different CDRMs.
+~~~
+
+=== Papers
+- */Coherent Distortion Risk Measures in Portfolio Selection/*\n
+[index.html Mingbin Feng], [https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/ken-seng-tan Ken Seng Tan]\n
+Systems Engineering Procedia 4 (2012): 25-34.\n
+[https://drive.google.com/file/d/0B88dFQMx1Q2CeHBybE41QjJVWFk/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]~~~~[http://www.sciencedirect.com/science/article/pii/S2211381911001986 Link {{<img src="image/external_link.png" alt="link" width="10">}}]
+{{</section>}}
+
+###################################################
+
+{{<section class="card">}}
+== Complementarity Formulations of L0-norm Optimization Problems
+
+~~~
+{}{raw}
+In many application it may be desirable to obtain sparse solutions. Minimizing the number of nonzeroes, L0-norm, of the solution is a difficult nonconvex optimization problem and is often approximated by the convex problem of minimizing the L1-norm. We consider exact formulations as mathematical programs with complementarity constraints and their reformulations as smooth nonlinear programs. We discuss properties of the various formulations and their connections to the original L0-minimization problem in terms of stationarity conditions, as well as local and global optimality. Numerical experiments using randomly generated problems show that standard nonlinear programming solvers, applied to the smooth but nonconvex equivalent reformulations, are often able to find sparser solutions than those obtained by the convex L1-approximation.
+~~~
+
+=== Papers
+- */Complementarity Formulations of L0-norm Optimization Problems/*\n
+[index.html Mingbin Feng], [http://homepages.rpi.edu/~mitchj/ John Mitchell], [http://ise.usc.edu/directory/jong-shi-pang.htm Jong-Shi Pang], Xi Shen, [http://users.iems.northwestern.edu/~andreasw/index.html Andreas Wächter] \n
+Working paper.\n
+[https://drive.google.com/file/d/0B88dFQMx1Q2CakRUUzNabWZNVWc/view?usp=sharing Tech Report {{<img src="image/Logo_pdf.jpg" alt="Tech Report" width="25" style="vertical-align: -4px">}}]~~~~[http://www.optimization-online.org/DB_HTML/2013/09/4053.html Link {{<img src="image/external_link.png" alt="link" width="10">}}]
+{{</section>}}
+
+# jemdoc: menu{MENU}{index.html}, nofooter
+== Index
+
+This is index page
